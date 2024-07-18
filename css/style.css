@@ -1,0 +1,134 @@
+/* CSS untuk layout utama */
+
+/* Gaya umum */
+.main-title {
+  text-align: center; /* Posisi teks ke tengah */
+}
+
+/* Bagian utama */
+main {
+  display: flex; /* Menggunakan flexbox */
+  justify-content: space-around; /* Menyusun konten di sekitar */
+}
+
+/* Konten utama */
+.main-content {
+  flex: 1; /* Memanjangkan konten */
+  padding: 12px; /* Ruang jeda dalam konten */
+}
+
+/* Formulir */
+form {
+  background-color: whitesmoke; /* Warna latar belakang abu-abu muda */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 12px; /* Ruang dalam */
+}
+
+/* Judul input */
+.input-title {
+  font-size: 14px; /* Ukuran font */
+  font-weight: bold; /* Ketebalan font */
+}
+
+/* Tombol umum */
+.button {
+  border-radius: 5px; /* Sudut tombol melengkung */
+  padding: 8px; /* Ruang dalam tombol */
+}
+
+/* Tombol submit */
+.submit {
+  background-color: lightskyblue; /* Warna latar belakang biru langit */
+  border: none; /* Tidak ada garis tepi */
+  color: white; /* Warna teks putih */
+}
+
+/* Tombol reset */
+.reset {
+  background-color: white; /* Warna latar belakang putih */
+  border: 1px solid #ccc; /* Garis tepi abu-abu */
+}
+
+/* Input nomor */
+input[type="number"] {
+  border: 3px solid #ccc; /* Garis tepi abu-abu tebal */
+  box-sizing: border-box; /* Kotak input termasuk tepi */
+  margin: 8px 0; /* Jarak atas dan bawah */
+  outline: none; /* Tidak ada bayangan fokus */
+  padding: 12px 20px; /* Ruang dalam */
+  transition: 0.5s; /* Animasi perubahan */
+  width: 100%; /* Lebar penuh */
+}
+
+/* Input nomor saat fokus */
+input[type="number"]:focus {
+  border: 3px solid #555; /* Garis tepi saat fokus berwarna gelap */
+}
+
+/* Bagian hasil */
+.result-section {
+  background-color: whitesmoke; /* Warna latar belakang abu-abu muda */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 12px; /* Ruang dalam */
+  text-align: center; /* Posisi teks ke tengah */
+}
+
+/* Label teks */
+label {
+  font-weight: bold; /* Ketebalan font */
+}
+
+/* Keterangan teks */
+.keterangan {
+  text-align: justify; /* Posisi teks rata kiri-kanan */
+}
+
+/* Tombol konsultasi, registrasi, download */
+.konsultasi,
+.registrasi,
+.download {
+  background-color: lightskyblue; /* Warna latar belakang biru langit */
+  border: none; /* Tidak ada garis tepi */
+  color: white; /* Warna teks putih */
+}
+
+/* Informasi umum */
+.general-information {
+  background-color: whitesmoke; /* Warna latar belakang abu-abu muda */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 12px; /* Ruang dalam */
+  text-align: center; /* Posisi teks ke tengah */
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column; /* Susunan vertikal untuk layar kecil */
+    align-items: center; /* Pusatkan item */
+  }
+
+  .main-content {
+    padding: 8px; /* Ruang dalam yang lebih kecil */
+  }
+
+  form {
+    padding: 8px; /* Ruang dalam yang lebih kecil */
+  }
+
+  .button {
+    width: 100%; /* Lebar penuh untuk tombol */
+    padding: 10px; /* Ruang dalam yang lebih besar */
+  }
+
+  input[type="number"] {
+    padding: 10px; /* Ruang dalam yang lebih besar */
+  }
+
+  .result-section {
+    padding: 8px; /* Ruang dalam yang lebih kecil */
+  }
+
+  .general-information {
+    padding: 8px; /* Ruang dalam yang lebih kecil */
+  }
+}
